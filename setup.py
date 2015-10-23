@@ -31,6 +31,7 @@ setup(name='retools',
           "setproctitle>=1.1.2",
           "redis>=2.7.3",
       ],
+      use_2to3=True,
       entry_points="""
       [console_scripts]
       retools-worker = retools.queue:run_worker
